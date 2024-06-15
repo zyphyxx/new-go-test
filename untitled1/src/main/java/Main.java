@@ -2,12 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Senha senha = new Senha("EdgarMendes#24");
+        // Objeto criado com a senha padrão automaticamente
+        Senha senha = new Senha();
+        System.out.println(senha.getConteudo());
 
-        senha.setConteudo("AlterandoSenha#24");
+        // não atende as condiçoes de troca de senha
+        senha.setConteudo("novasenha#24");
 
-        senha.validacao(senha.getConteudo());
-
+        // atende as condiçoes de troca de senha
+        senha.setConteudo("NovaSenha#24");
 
     }
 }
